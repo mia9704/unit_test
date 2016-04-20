@@ -42,9 +42,13 @@ public class MainActivity extends AppCompatActivity {
             TextView result = (TextView)findViewById(R.id.textView);
             int num1 = Integer.parseInt(first.getText().toString());
             int num2 = Integer.parseInt(second.getText().toString());
-            int sum = num1 + num2;
+            int sum = sum(num1, num2);
             result.setText(Integer.toString(sum));
         }
+    public int sum(int a, int b)
+    {
+        return a+b;
+    }
     //});
 
     @Override
