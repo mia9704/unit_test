@@ -17,4 +17,44 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/editText"
+        android:layout_toRightOf="@+id/tv1"
+        android:layout_toEndOf="@+id/tv1"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:id="@+id/button"
+        android:layout_below="@+id/editText2"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2"
+        android:onClick="onButtonClick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="40dp"
+        android:text="Sum"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_below="@+id/tv1"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2" />
+
 </RelativeLayout>

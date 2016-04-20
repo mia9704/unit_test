@@ -8,6 +8,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.content.DialogInterface.OnClickListener;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,7 +30,22 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+
     }
+    //Button button = (Button)findViewById(R.id.button);
+    //button.setOnClickListener(new View.OnClickListener() {
+        //@Override
+        public void onButtonClick(View v) {
+            EditText first = (EditText)findViewById(R.id.editText);
+            EditText second = (EditText)findViewById(R.id.editText2);
+            TextView result = (TextView)findViewById(R.id.textView);
+            int num1 = Integer.parseInt(first.getText().toString());
+            int num2 = Integer.parseInt(second.getText().toString());
+            int sum = num1 + num2;
+            result.setText(Integer.toString(sum));
+        }
+    //});
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
